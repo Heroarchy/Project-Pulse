@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game Sim</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="grid"></div>
+        <div class="player-card-container">
+            <div class="player-cards bottom"> 
+                <div class="player-card" data-player="1">
+                    <div class="card-header">
+                        <div class="card-name">Player 1</div>
+                        <div class="card-hp">HP: 100/100</div>
+                        <div class="card-weapon">Weapon: Sword</div>
+                        <div class="card-time">Time: 0.0</div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="card-stat" data-stat="toughness">Toughness: 10</div>
+                        <div class="card-stat" data-stat="stamina">Stamina: 8</div>
+                        <div class="card-stat" data-stat="speed">Speed: 6</div>
+                        <div class="card-stat" data-stat="reaction-time">Reaction Time: 9</div>
+                        <div class="card-stat" data-stat="gem-summoning">Gem Summoning: 3</div>
+                        <div class="card-stat" data-stat="agility">Agility: 7</div>
+                        <div class="card-stat" data-stat="awareness">Awareness: 5</div>
+                        <div class="card-stat" data-stat="strength">Strength: 9</div>
+                        <div class="card-stat" data-stat="accuracy">Accuracy: 8</div>
+                        <div class="card-stat" data-stat="combo">Combo: 7</div>
+                    </div>
+                </div>
+                
+                <div class="player-card" data-player="2">
+                    <div class="card-header">
+                        <div class="card-name">Player 2</div>
+                        <div class="card-hp">HP: 100/100</div>
+                        <div class="card-weapon">Weapon: Sword</div>
+                        <div class="card-time">Time: 0.0</div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="card-stat" data-stat="toughness">Toughness: 10</div>
+                        <div class="card-stat" data-stat="stamina">Stamina: 8</div>
+                        <div class="card-stat" data-stat="speed">Speed: 6</div>
+                        <div class="card-stat" data-stat="reaction-time">Reaction Time: 9</div>
+                        <div class="card-stat" data-stat="gem-summoning">Gem Summoning: 3</div>
+                        <div class="card-stat" data-stat="agility">Agility: 7</div>
+                        <div class="card-stat" data-stat="awareness">Awareness: 5</div>
+                        <div class="card-stat" data-stat="strength">Strength: 9</div>
+                        <div class="card-stat" data-stat="accuracy">Accuracy: 8</div>
+                        <div class="card-stat" data-stat="combo">Combo: 7</div>
+                    </div>
+                </div>
+    
+                <div class="player-card" data-player="3">
+                    <div class="card-header">
+                        <div class="card-name">Player 3</div>
+                        <div class="card-hp">HP: 100/100</div>
+                        <div class="card-weapon">Weapon: Sword</div>
+                        <div class="card-time">Time: 0.0</div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="card-stat" data-stat="toughness">Toughness: 10</div>
+                        <div class="card-stat" data-stat="stamina">Stamina: 8</div>
+                        <div class="card-stat" data-stat="speed">Speed: 6</div>
+                        <div class="card-stat" data-stat="reaction-time">Reaction Time: 9</div>
+                        <div class="card-stat" data-stat="gem-summoning">Gem Summoning: 3</div>
+                        <div class="card-stat" data-stat="agility">Agility: 7</div>
+                        <div class="card-stat" data-stat="awareness">Awareness: 5</div>
+                        <div class="card-stat" data-stat="strength">Strength: 9</div>
+                        <div class="card-stat" data-stat="accuracy">Accuracy: 8</div>
+                        <div class="card-stat" data-stat="combo">Combo: 7</div>
+                    </div>
+                </div>
+    
+                <div class="player-card" data-player="4">
+                    <div class="card-header">
+                        <div class="card-name">Player 4</div>
+                        <div class="card-hp">HP: 100/100</div>
+                        <div class="card-weapon">Weapon: Sword</div>
+                        <div class="card-time">Time: 0.0</div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="card-stat" data-stat="toughness">Toughness: 10</div>
+                        <div class="card-stat" data-stat="stamina">Stamina: 8</div>
+                        <div class="card-stat" data-stat="speed">Speed: 6</div>
+                        <div class="card-stat" data-stat="reaction-time">Reaction Time: 9</div>
+                        <div class="card-stat" data-stat="gem-summoning">Gem Summoning: 3</div>
+                        <div class="card-stat" data-stat="agility">Agility: 7</div>
+                        <div class="card-stat" data-stat="awareness">Awareness: 5</div>
+                        <div class="card-stat" data-stat="strength">Strength: 9</div>
+                        <div class="card-stat" data-stat="accuracy">Accuracy: 8</div>
+                        <div class="card-stat" data-stat="combo">Combo: 7</div>
+                    </div>
+                </div>
+
+                <div id="team-divider"></div>
+
+                <div class="player-card" data-player="5">
+                    <div class="card-header">
+                        <div class="card-name">Player 5</div>
+                        <div class="card-hp">HP: 100/100</div>
+                        <div class="card-weapon">Weapon: Axe</div>
+                        <div class="card-time">Time: 0.0</div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="card-stat" data-stat="toughness">Toughness: 8</div>
+                        <div class="card-stat" data-stat="stamina">Stamina: 7</div>
+                        <div class="card-stat" data-stat="speed">Speed: 5</div>
+                        <div class="card-stat" data-stat="reaction-time">Reaction Time: 7</div>
+                        <div class="card-stat" data-stat="gem-summoning">Gem Summoning: 1</div>
+                        <div class="card-stat" data-stat="agility">Agility: 6</div>
+                        <div class="card-stat" data-stat="awareness">Awareness: 4</div>
+                        <div class="card-stat" data-stat="strength">Strength: 10</div>
+                        <div class="card-stat" data-stat="accuracy">Accuracy: 7</div>
+                        <div class="card-stat" data-stat="combo">Combo: 6</div>
+                    </div>
+                </div>
+
+                <div class="player-card" data-player="6">
+                    <div class="card-header">
+                        <div class="card-name">Player 6</div>
+                        <div class="card-hp">HP: 100/100</div>
+                        <div class="card-weapon">Weapon: Axe</div>
+                        <div class="card-time">Time: 0.0</div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="card-stat" data-stat="toughness">Toughness: 8</div>
+                        <div class="card-stat" data-stat="stamina">Stamina: 7</div>
+                        <div class="card-stat" data-stat="speed">Speed: 5</div>
+                        <div class="card-stat" data-stat="reaction-time">Reaction Time: 7</div>
+                        <div class="card-stat" data-stat="gem-summoning">Gem Summoning: 1</div>
+                        <div class="card-stat" data-stat="agility">Agility: 6</div>
+                        <div class="card-stat" data-stat="awareness">Awareness: 4</div>
+                        <div class="card-stat" data-stat="strength">Strength: 10</div>
+                        <div class="card-stat" data-stat="accuracy">Accuracy: 7</div>
+                        <div class="card-stat" data-stat="combo">Combo: 6</div>
+                    </div>
+                </div>
+
+                <div class="player-card" data-player="7">
+                    <div class="card-header">
+                        <div class="card-name">Player 7</div>
+                        <div class="card-hp">HP: 100/100</div>
+                        <div class="card-weapon">Weapon: Axe</div>
+                        <div class="card-time">Time: 0.0</div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="card-stat" data-stat="toughness">Toughness: 8</div>
+                        <div class="card-stat" data-stat="stamina">Stamina: 7</div>
+                        <div class="card-stat" data-stat="speed">Speed: 5</div>
+                        <div class="card-stat" data-stat="reaction-time">Reaction Time: 7</div>
+                        <div class="card-stat" data-stat="gem-summoning">Gem Summoning: 1</div>
+                        <div class="card-stat" data-stat="agility">Agility: 6</div>
+                        <div class="card-stat" data-stat="awareness">Awareness: 4</div>
+                        <div class="card-stat" data-stat="strength">Strength: 10</div>
+                        <div class="card-stat" data-stat="accuracy">Accuracy: 7</div>
+                        <div class="card-stat" data-stat="combo">Combo: 6</div>
+                    </div>
+                </div>
+
+                <div class="player-card" data-player="8">
+                    <div class="card-header">
+                        <div class="card-name">Player 8</div>
+                        <div class="card-hp">HP: 100/100</div>
+                        <div class="card-weapon">Weapon: Axe</div>
+                        <div class="card-time">Time: 0.0</div>
+                    </div>
+                    <div class="card-stats">
+                        <div class="card-stat" data-stat="toughness">Toughness: 8</div>
+                        <div class="card-stat" data-stat="stamina">Stamina: 7</div>
+                        <div class="card-stat" data-stat="speed">Speed: 5</div>
+                        <div class="card-stat" data-stat="reaction-time">Reaction Time: 7</div>
+                        <div class="card-stat" data-stat="gem-summoning">Gem Summoning: 1</div>
+                        <div class="card-stat" data-stat="agility">Agility: 6</div>
+                        <div class="card-stat" data-stat="awareness">Awareness: 4</div>
+                        <div class="card-stat" data-stat="strength">Strength: 10</div>
+                        <div class="card-stat" data-stat="accuracy">Accuracy: 7</div>
+                        <div class="card-stat" data-stat="combo">Combo: 6</div>
+                    </div>
+                </div>
+            </div> 
+        </div>         
+    </body>
+</html>
